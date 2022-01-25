@@ -1,1 +1,13 @@
-theme: jekyll-theme-cayman
+plugins:
+  - jekyll-remote-theme
+title: "Jinn Code Generator"
+remote_theme: pmarsceill/just-the-docs
+
+logo: "/assets/logo.svg"
+aux_links:
+  "Jinn for Laravel on GitHub":
+    - "https://github.com/alex-shevchenko/jinn-laravel"
+aux_links_new_tab: true
+
+search:
+  heading_level: 3
