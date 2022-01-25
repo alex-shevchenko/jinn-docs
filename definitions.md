@@ -15,13 +15,13 @@ For small projects it is reasonable to use a single file for all definitions.
 You can name it `entities.yaml`, for example. 
 
 For larger projects there are several strategies available for using multiple files.
-They are covered [later in this documentation](#multiple-definition-files).
+They are covered [later in this documentation]({% link advanced-topics.md %}#multiple-definition-files).
 
 ## Database and Migrations
 As mentioned, Jinn manages it's database tables. It means that whenever the model is changed,
 Jinn generates and executes corresponding migrations. As a consequence, Jinn cannot run safely if there 
 are pending migrations in the project. So, generation will be aborted if pending migrations are detected.
-This behavior can be [overridden](#command-line-options-laravel), however, it is not recommended.
+This behavior can be [overridden]({% link advanced-topics.md %}#command-line-options-laravel), however, it is not recommended.
 
 Since the migrations are automatic, in order to avoid accidental data loss, Jinn never generates `drop` commands.
 If the field is removed from the model, Jinn will just make sure that the field is marked as nullable, so that the 
