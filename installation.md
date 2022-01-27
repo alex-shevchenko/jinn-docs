@@ -7,30 +7,28 @@ nav_order: 2
 # Installation (Laravel)
 ## Setup via composer
 
-```shell
+```shell 
 composer require jinn/jinn-laravel@dev-master
 ```
-    
+
 ## Publish Jinn config file
 
-```shell
+```shell 
 php artisan vendor:publish --provider="Jinn\Laravel\JinnServiceProvider"
 ```
-
 ## Create Jinn folder structure
 Default structure:  
-
 ```
 jinn 
 - def
 - gen 
 ```
-Alternative structure can be configured via `config/jinn.php`.
-Further guide will use default configuration. Changing Jinn configuration 
+An alternative structure can be configured via `config/jinn.php`.
+Further, this guide will use a default configuration. Changing the Jinn configuration 
 should result in corresponding changes to the next steps.
 
 ## Configure autoload
-Edit `composer.json`, locate autoload section and add a line as follows:
+Edit `composer.json`, locate autoload section, and add a line as follows:
 ```json
 "autoload": {
     "psr-4": {
@@ -39,7 +37,7 @@ Edit `composer.json`, locate autoload section and add a line as follows:
     }
 }
 ```
-Then ask composer to update autoload files:
+Then ask the composer to update autoload files:
 
 ```shell
 composer dump-autoload

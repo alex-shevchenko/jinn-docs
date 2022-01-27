@@ -32,7 +32,6 @@ Comment:
 ``` 
 ## Generation (Laravel)
 Ask Jinn to generate the files
-
 ```shell
 php artisan jinn
 ```
