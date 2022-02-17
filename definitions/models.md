@@ -14,7 +14,7 @@ parent: "Definitions"
 1. TOC
 {:toc}
 
-## Fields
+## Properties
 Model properties are defined under `properties` key of the Entity. For example, the User entity below has three properties defined:
 ```yaml
 User:
@@ -199,4 +199,4 @@ User:
 ```
 
 ---
-Next: [Views]({% link definitions/views.md %})
+Next: [Indexes]({% link definitions/indexes.md %})
