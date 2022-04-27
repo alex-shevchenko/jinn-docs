@@ -8,7 +8,7 @@ nav_order: 2
 ## Setup via composer
 
 ```shell 
-composer require jinn/jinn-laravel@dev-master
+composer require jinn/laravel
 ```
 
 ## Publish Jinn config file
